@@ -2,7 +2,7 @@
 
 ## Program
 Projekt stworzony przy użyciu:
-* Microsoft Excel: Office 365
+* Microsoft Excel i VBA: Office 365 *(Poprawione, aby było zgodne z wersją 2010)*
 
 ## Założenia
 
