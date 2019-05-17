@@ -42,21 +42,25 @@ Te działania zostawią dwa arkusze: wejściowy i wyjściowy z danymi określony
 8. Dla osób z liczbą dat mniejszą od 4 wypisuje dla każdej 1 sprawę, a następnie dla każdej jednostki drugą i ewentualnie trzecią.
 
 Pierwsza kolumna:
+
 9. Dla 1 daty i 0 liczby zamkniętych spraw przez daną osobę wyszukuje dowolną sprawę danej osoby i koloruje komórkę na czerwono (i wszystkie kolejne sytuacje, w których dana osoba nie zamknęła sprawy będą oznaczone kolorem czerwonym)
 10. Dla 1 daty i > 0 liczby zamkniętych spraw szuka sprawy zamkniętej przez daną osobę.
 11. Dla 2 albo 3 dat i 0 zamkniętych spraw wyszukuje dowolną sprawę danej osoby.
 12. Dla 2 albo 3 dat i > 0 zamkniętych spraw, to szuka sprawę ze statusem "TAK". Jeśli nie znajdzie to szuka dowolnej sprawy danej osoby (zgodnej z datą).
 
 Po zakończeniu rozpoczyna pracę z drugą kolumną:
+
 13. Patrz pkt. 11
 14. Dla 2 dat i > 0 zamkniętych i czerwonej pierwszej sprawy szuka sprawy ze statusem "TAK" na drugą kolumnę. Jeśli nie znajdzie takiej sprawy uzupełnia dowolną inną (zgodnej z datą).
 
 Po zakończeniu rozpoczyna pracę z trzecią kolumną:
+
 15. Dla 3 dat i 0 zamkniętych wyszukuje dowolną sprawę danej osoby.
 16. Dla 3 dat i > 0 zamkniętych i obie kolumny czerwone szuka sprawy ze statusem "TAK". Jeśli nie znajdzie takiej sprawy uzupełnia dowolną inną (zgodnej z datą)
 17. Jeśli jakaś osoba ma > 0 zamkniętych, ale wszystki kolumny są czerwone to wyszukuje pierwszą dostępną sprawę ze statusem "TAK" i zamienia ją ze sprawą o tej samej dacie z innym statusem.
 
 Druga część makra, dla osób z > 3 datami.
+
 18. Deklaracja zmiennych, nieużywanych w innej części makra.
 19. Obecnie przeszukuje tylko pierwszą kolumnę, ale uzupełnia również pozostałe dwie.
 20. Zmienne ustawione tak, aby uporządkować "sektory działania", aby możliwie rozsiać daty. Pierwsza data jest z przedziału od 1 do liczby dni dzielonej przez 3 (część całkowita). Druga data jest od liczby o jeden większej do liczby dwa razy większej od ostatniej liczby z sektora pierwszego. Trzecia data jest z przedziału od jeden większego od zakończenia poprzedniego sektora do końca.
