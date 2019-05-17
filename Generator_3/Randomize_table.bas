@@ -18,7 +18,7 @@ Next
 
 
     Worksheets(wsname_base).Sort.SortFields.Clear
-    Worksheets(wsname_base).Sort.SortFields.Add2 Key:=Range("L1"), _
+    Worksheets(wsname_base).Sort.SortFields.Add Key:=Range("L1"), _
         SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:=xlSortNormal
     With ActiveWorkbook.Worksheets(wsname_base).Sort
         .SetRange Range("A2:L" & rw2)

@@ -48,13 +48,13 @@ Range("A:A").NumberFormat = "m/d/yyyy"
 Worksheets(wsname).Range("A:D").RemoveDuplicates Columns:=Array(1, 2, 3, 4), _
     Header:=xlYes
 Worksheets(wsname).Sort.SortFields.Clear
-Worksheets(wsname).Sort.SortFields.Add2 Key _
+Worksheets(wsname).Sort.SortFields.Add Key _
     :=Range("D2:D1000000"), SortOn:=xlSortOnValues, Order:=xlAscending, _
     DataOption:=xlSortNormal
-Worksheets(wsname).Sort.SortFields.Add2 Key _
+Worksheets(wsname).Sort.SortFields.Add Key _
     :=Range("C2:C1000000"), SortOn:=xlSortOnValues, Order:=xlAscending, _
     DataOption:=xlSortNormal
-Worksheets(wsname).Sort.SortFields.Add2 Key _
+Worksheets(wsname).Sort.SortFields.Add Key _
     :=Range("A2:A1000000"), SortOn:=xlSortOnValues, Order:=xlDescending, _
     DataOption:=xlSortNormal
 With Worksheets(wsname).Sort
@@ -80,10 +80,10 @@ Worksheets(wsname2).Range("A1:C" & rw2).RemoveDuplicates Columns:=Array(1, 2, 3)
 
 
 Worksheets(wsname2).Sort.SortFields.Clear
-    Worksheets(wsname2).Sort.SortFields.Add2 Key:=Range( _
+    Worksheets(wsname2).Sort.SortFields.Add Key:=Range( _
         "C1:C2000"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:= _
         xlSortNormal
-    Worksheets(wsname2).Sort.SortFields.Add2 Key:=Range( _
+    Worksheets(wsname2).Sort.SortFields.Add Key:=Range( _
         "B1:B2000"), SortOn:=xlSortOnValues, Order:=xlAscending, DataOption:= _
         xlSortNormal
     With Worksheets(wsname2).Sort
