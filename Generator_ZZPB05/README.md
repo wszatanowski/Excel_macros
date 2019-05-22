@@ -31,7 +31,7 @@ Output data are in the new worksheet with the name based on the date when the ma
 **Column names** and **example row**
 
 |LOGIN|CASE_NUMBER_1|CASE_NUMBER_2|CASE_NUMBER_3|
-|---|---|---|---|---|---|
+|---|---|---|---|
 |jkowalski|ZA190502012345|ZA190504001527|ZA190427002137
 
 ## Assumptions
@@ -40,7 +40,7 @@ Requirements for the output data:
 
 1. Cases cannot have the same date (when source_status = "PROPOZYCJA" and output_status = "ZREALIZOWANA") in the source data (ignore time).
 2. Number of cases is equal to number of different dates (when source_status = "PROPOZYCJA" and output_status = "ZREALIZOWANA"). The maximum number is 3.
-3. If exists, at least one case for each login must have row with this case and source_status = "ZGŁOSZENIE" and output status = "ZGŁOSZENIE". 
+3. If exists, at least one case for each login must have row with this case and source_status = "ZGŁOSZENIE" and output status = "ZGŁOSZENIE".
 4. Dates (when source_status = "PROPOZYCJA" and output_status = "ZREALIZOWANA") in the source data (ignore time) must be random and divided into three, disjoint sectors (begin days, middle days, last days).
 
 ## Instructions for use
