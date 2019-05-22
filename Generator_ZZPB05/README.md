@@ -32,7 +32,7 @@ Output data are in the new worksheet with the name based on the date when the ma
 
 |LOGIN|CASE_NUMBER_1|CASE_NUMBER_2|CASE_NUMBER_3|
 |---|---|---|---|
-|jkowalski|ZA190502012345|ZA190504001527|ZA190427002137
+|jkowalski|ZA190502012345|ZA190504001527|ZA190427002137|
 
 ## Assumptions
 
