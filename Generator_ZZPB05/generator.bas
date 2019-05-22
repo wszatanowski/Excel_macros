@@ -28,7 +28,7 @@ rw = Range("A1").End(xlDown).Row
 'filtr right data basing on assumptions and copy them
 'unable to filtr 3 criterias where all of them have "<>" inside
 With Worksheets(wsname_source).Range("B7:F" & rw)
-  .AutoFilter Field:=5, Criteria1:="<>PaK Zdrowie", Operator:=xlAnd, Criteria2:="<>portal świadczeniodawcy"
+  .AutoFilter Field:=5, Criteria1:="<>XXX", Operator:=xlAnd, Criteria2:="<>YYY"
   .AutoFilter Field:=2, Criteria1:="ZGŁOSZENIE"
   .AutoFilter Field:=3, Criteria1:="PROPOZYCJA"
   .Copy
@@ -49,7 +49,7 @@ rw4 = Worksheets(wsname4).Range("A1").End(xlDown).Row
 
 'filtr the last criteria and delete output rows (with headers), then insert new headers with 1 new column
 With Worksheets(wsname4)
-  .Range("A1:C" & rw4).AutoFilter Field:=3, Criteria1:="ass-system"
+  .Range("A1:C" & rw4).AutoFilter Field:=3, Criteria1:="ZZZ"
   .Range(Range("A1"), Range("A1").End(xlToRight).End(xlDown)).EntireRow.Delete
   .Range("1:1").Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
   .Range("A1") = "CASE_NUMBER"
@@ -66,7 +66,7 @@ rw4 = Worksheets(wsname4).Range("A1").End(xlDown).Row
 'filtr right data basing on assumptions and copy them
 'unable to filtr 3 criterias where all of them have "<>" inside
 With Worksheets(wsname_source).Range("B7:F" & rw)
-  .AutoFilter Field:=5, Criteria1:="<>PaK Zdrowie", Operator:=xlAnd, Criteria2:="<>portal świadczeniodawcy"
+  .AutoFilter Field:=5, Criteria1:="<>XXX", Operator:=xlAnd, Criteria2:="<>YYY"
   .AutoFilter Field:=2, Criteria1:="PROPOZYCJA"
   .AutoFilter Field:=3, Criteria1:="ZREALIZOWANA"
   .Copy
@@ -87,7 +87,7 @@ rw2 = Worksheets(wsname).Range("A1").End(xlDown).Row
 
 'filtr the last criteria and delete output rows (with headers), then insert new headers with 1 new column
 With Worksheets(wsname)
-  .Range("A1:C" & rw2).AutoFilter Field:=3, Criteria1:="ass-system"
+  .Range("A1:C" & rw2).AutoFilter Field:=3, Criteria1:="ZZZ"
   .Range(Range("A1"), Range("A1").End(xlToRight).End(xlDown)).EntireRow.Delete
   .Range("1:1").Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
   .Range("A1") = "CASE_NUMBER"
